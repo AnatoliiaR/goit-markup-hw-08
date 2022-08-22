@@ -1,0 +1,171 @@
+
+/*стилі навігації*/
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.menu__link {
+    position: relative;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+
+    padding-bottom: 32.5px;
+
+    transition: color 250ms $primary-cubic;
+
+
+
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+        opacity: 0;
+        transition: opacity 250ms $primary-cubic;
+    }
+
+
+
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+
+
+    // /* клас, що підсвічує активну сторінку */
+    // .menu__link--current {
+    //     color: $accent-text-color;
+
+
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         display: block;
+
+    //         bottom: 0;
+    //         width: 100%;
+    //         height: 4px;
+    //         background: #2196F3;
+    //         border-radius: 2px;
+    //         opacity: 1;
+    //     }
+
+    // }
+
+
+
+}
+
+
+
+
+
+
+
+
+.menu li:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+
+
+
+
+
+
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header--second {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $color-white-rich;
+}
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.cont-nav__link {
+    display: flex;
+    color: $primary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+
+
+    /* задается в базовый класс, анимация перехода */
+    transition: color 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+
+}
+
+
+
+.cont-nav {
+    @extend %align;
+
+    margin-left: auto;    
+    align-self: center;
+    
+    
+    li:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+
+
+
+.cont-nav__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    align-self: center;
+
+}

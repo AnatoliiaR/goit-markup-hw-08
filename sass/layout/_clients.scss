@@ -1,0 +1,43 @@
+.clients-list__item {
+    display: flex;
+    margin-right: 30px;
+
+
+    li:not(:last-child) {
+        margin-right: 0;
+    }
+
+
+}
+
+.clients-list__icon {
+    fill: currentColor;
+
+}
+
+
+.clients-list__link {
+    @extend %align;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+
+    transition: color 250ms $primary-cubic, border 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        color: $accent-text-color;
+
+    }
+
+}
+
+.clients-list {
+    display: flex;
+
+}

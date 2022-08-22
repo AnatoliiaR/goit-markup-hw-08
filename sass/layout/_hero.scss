@@ -1,0 +1,42 @@
+.hero {
+
+    background-color: $color-blacklight-2f30;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/banner.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+
+/* колір заголовка в рішеннях*/
+
+.hero__title {
+    margin-bottom: 30px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    /* background-color: wheat; */
+    color: $primary-white-color;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    @include font($fs: 44px, $fw: 900, $lh: 60px);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+

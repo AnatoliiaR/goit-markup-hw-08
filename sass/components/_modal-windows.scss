@@ -1,0 +1,47 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms $primary-cubic;
+
+
+    width: 528px;
+    height: 581px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal__btn {
+    position: absolute;
+
+    display: block;
+
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    padding-top: 5px;
+    padding-left: 5px;
+
+    background: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+
+}
+
+
+.modal__icon {
+    fill: rgba(0, 0, 0, 1);
+    transition: fill 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        }
+}
+
