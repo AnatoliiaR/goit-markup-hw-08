@@ -1,106 +1,169 @@
 
 /*стилі навігації*/
 
-.menu {
-    display: flex;
-    align-items: center;
+// .menu {
+//     display: flex;
+//     align-items: center;
 
-}
-
-
-.menu__link {
-    position: relative;
-    color: $title-text-color;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-
-    padding-bottom: 32.5px;
-
-    transition: color 250ms $primary-cubic;
+// }
 
 
+// .menu__link {
+//     position: relative;
+//     color: $title-text-color;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     cursor: pointer;
 
-    &::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
+//     padding-bottom: 32.5px;
 
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: #2196F3;
-        border-radius: 2px;
-        opacity: 0;
-        transition: opacity 250ms $primary-cubic;
+//     transition: color 250ms $primary-cubic;
+
+
+
+//     &::after {
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+
+//         content: '';
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         background: #2196F3;
+//         border-radius: 2px;
+//         opacity: 0;
+//         transition: opacity 250ms $primary-cubic;
+//     }
+
+
+
+
+
+//     &:hover,
+//     &:focus {
+//         color: $accent-text-color;
+
+
+//         &::after {
+//             opacity: 1;
+//         }
+//     }
+
+
+
+  
+
+// }
+
+
+
+
+
+
+
+
+// .menu li:not(:last-child) {
+//     margin-right: 50px;
+
+// }
+
+
+
+
+
+
+
+
+// .page-header {
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+// }
+
+
+// .page-header__container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// .page-header--second {
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+
+//     border-bottom-width: 1px;
+//     border-bottom-style: solid;
+//     border-bottom-color: $color-white-rich;
+// }
+
+// .page-header__nav {
+//     display: flex;
+//     align-items: center;
+// }
+
+
+
+
+
+// .cont-nav__link {
+//     display: flex;
+//     color: $primary-text-color;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+
+
+//     /* задается в базовый класс, анимация перехода */
+//     transition: color 250ms $primary-cubic;
+
+
+//     &:hover,
+//     &:focus {
+//         color: $accent-text-color;
+//     }
+
+// }
+
+
+
+// .cont-nav {
+//     @extend %align;
+
+//     margin-left: auto;    
+//     align-self: center;
+    
+    
+//     li:not(:last-child) {
+//         margin-right: 50px;
+//     }
+// }
+
+
+
+
+// .cont-nav__icon {
+//     margin-right: 10px;
+//     fill: currentColor;
+//     align-self: center;
+
+// }
+
+@media screen and  (max-width: 767px) {
+    .menu {
+        display: none;
     }
 
-
-
-
-
-    &:hover,
-    &:focus {
-        color: $accent-text-color;
-
-
-        &::after {
-            opacity: 1;
-        }
+    .cont-nav {
+        display: none;
     }
-
-
-
-    // /* клас, що підсвічує активну сторінку */
-    // .menu__link--current {
-    //     color: $accent-text-color;
-
-
-    //     &::after {
-    //         content: '';
-    //         position: absolute;
-    //         display: block;
-
-    //         bottom: 0;
-    //         width: 100%;
-    //         height: 4px;
-    //         background: #2196F3;
-    //         border-radius: 2px;
-    //         opacity: 1;
-    //     }
-
-    // }
-
-
-
 }
-
-
-
-
-
-
-
-
-.menu li:not(:last-child) {
-    margin-right: 50px;
-
-}
-
-
-
-
-
-
-
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
-
 
 .page-header__container {
     display: flex;
@@ -108,35 +171,123 @@
     justify-content: space-between;
 }
 
-.page-header--second {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: $color-white-rich;
+.mobile-menu__container {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
-.page-header__nav {
-    display: flex;
-    align-items: center;
+.mobile-menu-open {
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 40px;
+
+}
+
+.mobile-menu__close-btn {
+position: absolute;
+top: 10px;
+right: 15px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+    cursor: pointer;
+
+
+
+}
+
+.mobile-menu__close-icon {
+    fill: rgba(0, 0, 0, 1);
+    transition: fill 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        }
 }
 
 
+.menu-mobile__link {
 
-
-
-.cont-nav__link {
-    display: flex;
-    color: $primary-text-color;
+    display: block;
+    font-family: 'Roboto';
+    color: $title-text-color;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 47px;
+    // text-align: center;
+    letter-spacing: 0.02em;
+
+    // padding-bottom: 32px;
+
+    // transition: color 250ms $primary-cubic;
+
+
+
+       &:hover,
+       &:focus {
+       color: $accent-text-color;
+       }
+}
+
+.menu-mobile li:not(:last-child) {
+        margin-bottom: 32px;
+    
+    }
+
+
+.cont-mobile__link {
+    display: block;
+    color: $primary-text-color;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
 
 
-    /* задается в базовый класс, анимация перехода */
-    transition: color 250ms $primary-cubic;
+//     /* задается в базовый класс, анимация перехода */
+//     transition: color 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+
+}
+
+.cont-mobile {
+    margin-top: 302px;
+
+       li:not(:last-child) {
+        margin-bottom: 32px;
+    
+       }
+}
+
+
+.cont-mobile__link--mail {
+    display: block;
+    color: $primary-text-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+
+
+//     /* задается в базовый класс, анимация перехода */
+//     transition: color 250ms $primary-cubic;
 
 
     &:hover,
@@ -147,25 +298,266 @@
 }
 
 
+.social-mobile {
+display: flex;
+    margin-top: 64px;
 
-.cont-nav {
-    @extend %align;
 
-    margin-left: auto;    
-    align-self: center;
-    
-    
     li:not(:last-child) {
-        margin-right: 50px;
+        margin-right: 10px;
+        // 
+    
+       }
+
+      
+}
+
+
+.social-mobile__item {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height, or 122% */
+
+letter-spacing: 0.02em;
+
+
+
+
+
+&:not(:last-child)::after {
+    
+            content: '';
+                        width: 22px;
+            height: 0;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-left: 10px;
+
+            // transition: opacity 250ms $primary-cubic;
+        }
+   
+        
+}
+
+
+.social-mobile__link {
+    color: $accent-text-color;
+}
+
+
+@media screen and  (min-width: 768px) {
+    .mobile-menu-open {
+        display: none;
     }
+
+
+    
+
+    .page-header__nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        
+        .menu {
+                display: flex;
+                align-items: center;
+            
+            }
+            
+            
+            .menu__link {
+                position: relative;
+                color: $title-text-color;
+                font-weight: 500;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                cursor: pointer;
+            
+                padding-bottom: 32.5px;
+            
+                transition: color 250ms $primary-cubic;
+
+                &::after {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                    
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 4px;
+                            background: #2196F3;
+                            border-radius: 2px;
+                            opacity: 0;
+                            transition: opacity 250ms $primary-cubic;
+                        }
+                    
+                    
+                    
+                    
+                    
+                        &:hover,
+                        &:focus {
+                            color: $accent-text-color;
+                    
+                    
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+                    
+                    
+                    
+                      
+                    
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    .menu li:not(:last-child) {
+                        margin-right: 50px;
+                    
+                    }
+
+
+                    .cont-nav {
+                        // margin-top: 21px;
+                        padding-right: 15px;
+                    }
+
+
+
+                    .cont-nav__link {
+                        display: flex;
+                        margin-bottom: 10px;
+                        color: $primary-text-color;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 1.16;
+                        letter-spacing: 0.02em;
+
+
+
+                           
+                        /* задается в базовый класс, анимация перехода */
+                        transition: color 250ms $primary-cubic;
+                    
+                    
+                         &:hover,
+                         &:focus {
+                            color: $accent-text-color;
+                        }
+                    
+             
+                    }
+                 
+                    // }
+
+    //              .cont-nav {
+    // @extend %align;
+
+    // // margin-left: auto;    
+    // align-self: center;
+    .cont-nav__icon {
+        // display: flex;
+            margin-right: 8px;
+            fill: currentColor;
+            align-self: center;
+        
+        }
+    
+    
 }
 
 
 
 
-.cont-nav__icon {
-    margin-right: 10px;
-    fill: currentColor;
-    align-self: center;
+@media screen and  (min-width: 1200px) {
 
+    .menu {
+            display: flex;
+            align-items: center;
+        
+        }
+        
+               
+        
+        
+        
+        
+        .page-header {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+        
+        
+        .page-header__container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .page-header--second {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: $color-white-rich;
+        }
+        
+        .page-header__nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        
+
+        .cont-nav {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: auto;
+
+            // @extend %align;
+        
+            //     margin-left: auto;    
+            //     align-self: center;
+                
+                
+                li:not(:last-child) {
+                    margin-right: 50px;
+                }
+        }
+        
+        
+        
+        .cont-nav__link {
+                
+        font-size: 14px;
+        margin: 0;
+        
+            /* задается в базовый класс, анимация перехода */
+            transition: color 250ms $primary-cubic;
+        
+                
+        }
+        
+        
+  
 }
+            
+        
+        
+       
+
+
+

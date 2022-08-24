@@ -21,11 +21,28 @@
 }
 
 
-/* колір заголовка в рішеннях*/
+// @media screen and  (max-width: 767px) {
 
+//     .hero {
+
+//         max-width: 767px;
+//         padding-top: 118px;
+//         padding-bottom: 118px;
+
+
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)),
+//         url(../../images/hero/hero-mobile.jpg);
+//     }
+
+//     // background-repeat: no-repeat;
+//     // background-size: cover;
+//     // background-position: 50% 50%;
+
+// }
 .hero__title {
     margin-bottom: 30px;
-    width: 696px;
+    width: 360px;
     margin-right: auto;
     margin-left: auto;
 
@@ -35,8 +52,135 @@
     // font-weight: 900;
     // font-size: 44px;
     // line-height: 1.36;
-    @include font($fs: 44px, $fw: 900, $lh: 60px);
+    @include font($fs: 26px, $fw: 900, $lh: 42px);
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
+
+
+@media screen and (min-device-pixel-rotatio: 2) and (max-width: 767px), 
+screem and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+
+    .hero {
+        // max-width: 767px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-mobile@2x.jpg);
+    }
+
+
+    .hero__title {
+        @include font($fs: 26px, $fw: 900, $lh: 42px);
+        width: 360px;
+        height: 84px;
+
+
+    }
+
+    
+
+
+    }
+
+
+@media screen and  (min-width: 768px) {
+
+    .hero {
+
+        max-width: 1199px;
+        // padding-top: 118px;
+        // padding-bottom: 118px;
+
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-tablet.jpg);
+    }
+
+
+
+}
+
+
+@media screen and (min-device-pixel-rotatio: 2) and (min-width: 768px), 
+screem and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-tablet@2x.jpg);
+    }
+
+    }
+
+
+
+
+@media screen and  (min-width: 1200px) {
+
+    .hero {
+
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-desktop.jpg);
+    }
+
+
+    .hero__title {
+        margin-bottom: 30px;
+        width: 696px;
+        margin-right: auto;
+        margin-left: auto;
+    
+    
+        /* background-color: wheat; */
+        color: $primary-white-color;
+        // font-weight: 900;
+        // font-size: 44px;
+        // line-height: 1.36;
+        @include font($fs: 44px, $fw: 900, $lh: 60px);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
+
+
+    .button--primary {
+        width: 216px;
+        height: 50px;
+        // padding: 10px;
+
+
+    }
+
+
+}
+
+
+@media screen and (min-device-pixel-rotatio: 2) and (min-width: 1200px), 
+screem and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-desktop@2x.jpg);
+
+    }
+
+
+    
+
+    }
+
+
+/* колір заголовка в рішеннях*/
+
+
 
