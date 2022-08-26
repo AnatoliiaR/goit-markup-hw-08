@@ -1,8 +1,8 @@
 
 
 .porfolio {
-    padding-top: 94px;
-    padding-bottom: 92px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;
 
@@ -20,6 +20,9 @@
     }
 
 }
+
+
+
 
 
 
@@ -163,3 +166,24 @@
 
 
 }
+
+@media screen and  (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .cont-nav {
+        display: none;
+    }
+}
+
+
+
+
+
+    @media screen and (max-width: 1199px) {
+        
+
+       
+       
+    }
