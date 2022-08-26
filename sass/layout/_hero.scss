@@ -21,28 +21,9 @@
 }
 
 
-// @media screen and  (max-width: 767px) {
-
-//     .hero {
-
-//         max-width: 767px;
-//         padding-top: 118px;
-//         padding-bottom: 118px;
-
-
-//         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)),
-//         url(../../images/hero/hero-mobile.jpg);
-//     }
-
-//     // background-repeat: no-repeat;
-//     // background-size: cover;
-//     // background-position: 50% 50%;
-
-// }
 .hero__title {
     margin-bottom: 30px;
-    width: 360px;
+  
     margin-right: auto;
     margin-left: auto;
 
@@ -72,7 +53,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .hero__title {
         @include font($fs: 26px, $fw: 900, $lh: 42px);
-        width: 360px;
+        // width: 360px;
         height: 84px;
 
 
@@ -135,7 +116,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
     .hero__title {
         margin-bottom: 30px;
-        width: 696px;
+        // width: 696px;
         margin-right: auto;
         margin-left: auto;
     

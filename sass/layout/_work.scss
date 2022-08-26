@@ -1,3 +1,14 @@
+.work {
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+
+}
+
+
+
 .work__list {
     display: flex;
     flex-wrap: wrap;
@@ -33,3 +44,4 @@
     /* z-index: 3; */
 
 }
+
