@@ -12,14 +12,23 @@
 .filtr__list {
     @extend %align;
 
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+ 
+
+    margin-bottom: 40px;
 
 
-    li:not(:last-child) {
-        margin-right: 8px;
-    }
+    // li:not(:last-child) {
+    //     margin-right: 8px;
+    // }
 
 }
+
+
 
 
 
@@ -27,14 +36,16 @@
 
 
 .portfolio-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: block;
+    
     align-items: center;
-
-
+    
 
 }
+
+
+
+
 
 
 .portfolio-meta {
@@ -44,7 +55,9 @@
 
     border: 1px solid $color-grey-eeee;
     padding: 20px 24px;
-    width: 370px;
+    max-width: 450px;
+
+    
 
 
 }
@@ -52,6 +65,18 @@
 .portfolio-card__item {
 
     background: $primary-white-color;
+
+    
+
+        max-width: 450px;
+        margin-bottom: 30px;
+    
+        img {
+            width: 100%;
+        }
+    
+    
+    
 
 
 }
@@ -175,15 +200,244 @@
     .cont-nav {
         display: none;
     }
+
+}
+    
+.mobile-menu__container {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.mobile-menu-open {
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 40px;
+
+}
+
+.mobile-menu__close-btn {
+position: absolute;
+top: 10px;
+right: 15px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+    cursor: pointer;
+
+
+
+}
+
+.mobile-menu__close-icon {
+    fill: rgba(0, 0, 0, 1);
+    transition: fill 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        }
+}
+
+
+.menu-mobile__link {
+
+    display: block;
+    font-family: 'Roboto';
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    // text-align: center;
+    letter-spacing: 0.02em;
+
+    // padding-bottom: 32px;
+
+    // transition: color 250ms $primary-cubic;
+    // flex-basis: calc((100% - 30px) / 1);
+
+
+
+       &:hover,
+       &:focus {
+       color: $accent-text-color;
+       }
+}
+
+.menu-mobile li:not(:last-child) {
+        margin-bottom: 32px;
+    
+    }
+
+
+.cont-mobile__link {
+    display: block;
+    color: $primary-text-color;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+
+
+//     /* задается в базовый класс, анимация перехода */
+//     transition: color 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+
+}
+
+.cont-mobile {
+    margin-top: 302px;
+
+       li:not(:last-child) {
+        margin-bottom: 32px;
+    
+       }
+}
+
+
+.cont-mobile__link--mail {
+    display: block;
+    color: $primary-text-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+
+
+//     /* задается в базовый класс, анимация перехода */
+//     transition: color 250ms $primary-cubic;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+
+}
+
+
+.social-mobile {
+display: flex;
+    margin-top: 64px;
+
+
+    li:not(:last-child) {
+        margin-right: 10px;
+        // 
+    
+       }
+
+      
+}
+
+
+.social-mobile__item {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height, or 122% */
+
+letter-spacing: 0.02em;
+
+
+
+
+
+&:not(:last-child)::after {
+    
+            content: '';
+                        width: 22px;
+            height: 0;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-left: 10px;
+
+            // transition: opacity 250ms $primary-cubic;
+        }
+   
+        
+}
+
+
+.social-mobile__link {
+    color: $accent-text-color;
 }
 
 
 
+@media screen and  (min-width: 768px) {
 
 
-    @media screen and (max-width: 1199px) {
+
+           .filtr__list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
         
+        .filtr__item:first-child {
+            margin-bottom: 0;
+        }
 
-       
-       
+
+        .portfolio-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        
+        
+        
+        }
+
+        .portfolio-card__item {
+
+            max-width: 354px;
+            // margin-bottom: 30px;
+            margin-bottom: 0;
+        
+            img {
+                width: 100%;
+            }
+        
+        
+        }
+
+
     }
+    @media screen and (min-width: 1200px) {
+
+
+        .porfolio {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        
+        
+        }
+
+
+        .filtr__list {
+            margin-bottom: 50px;
+        }
+    }
+
+
+

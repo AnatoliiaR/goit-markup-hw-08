@@ -250,7 +250,6 @@ body {
   font-weight: 700;
   line-height: 1.1538461538;
   text-decoration: none;
-  margin-right: 93px;
   align-items: center;
 }
 
@@ -262,7 +261,13 @@ body {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .logo {
     font-size: 24px;
     margin: 0;
@@ -547,6 +552,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.page-header--second {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
 }
 
 .mobile-menu__container {
@@ -1324,16 +1337,16 @@ body {
 }
 
 .filtr__list {
-  margin-bottom: 50px;
-}
-.filtr__list li:not(:last-child) {
-  margin-right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 
 .portfolio-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
   align-items: center;
 }
 
@@ -1342,11 +1355,16 @@ body {
   position: relative;
   border: 1px solid #EEEEEE;
   padding: 20px 24px;
-  width: 370px;
+  max-width: 450px;
 }
 
 .portfolio-card__item {
   background: #FFFFFF;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+.portfolio-card__item img {
+  width: 100%;
 }
 
 .portfolio-meta__subtitle {
@@ -1429,5 +1447,151 @@ body {
   }
   .cont-nav {
     display: none;
+  }
+}
+.mobile-menu__container {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu-open {
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 40px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.mobile-menu__close-icon {
+  fill: rgb(0, 0, 0);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+  fill: #2196F3;
+}
+
+.menu-mobile__link {
+  display: block;
+  font-family: "Roboto";
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.menu-mobile__link:hover, .menu-mobile__link:focus {
+  color: #2196F3;
+}
+
+.menu-mobile li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.cont-mobile__link {
+  display: block;
+  color: #757575;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.cont-mobile__link:hover, .cont-mobile__link:focus {
+  color: #2196F3;
+}
+
+.cont-mobile {
+  margin-top: 302px;
+}
+.cont-mobile li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.cont-mobile__link--mail {
+  display: block;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.cont-mobile__link--mail:hover, .cont-mobile__link--mail:focus {
+  color: #2196F3;
+}
+
+.social-mobile {
+  display: flex;
+  margin-top: 64px;
+}
+.social-mobile li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-mobile__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.02em;
+}
+.social-mobile__item:not(:last-child)::after {
+  content: "";
+  width: 22px;
+  height: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.social-mobile__link {
+  color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .filtr__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filtr__item:first-child {
+    margin-bottom: 0;
+  }
+  .portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+  }
+  .portfolio-card__item {
+    max-width: 354px;
+    margin-bottom: 0;
+  }
+  .portfolio-card__item img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .porfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .filtr__list {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

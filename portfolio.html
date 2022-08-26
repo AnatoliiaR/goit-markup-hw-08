@@ -34,6 +34,11 @@
                     <li><a class="menu__link link" href="#">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open-icon" width="40px" height="40px">
+                    <use href="./images/icon/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
             <ul class="cont-nav list">
                 <li class="cont-nav__item">
     
@@ -66,8 +71,8 @@
                 </button>
     
                 <ul class="menu-mobile list">
-                    <li><a class="menu-mobile__link link menu__link--current" href="./index.html">Студія</a></li>
-                    <li><a class="menu-mobile__link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="menu-mobile__link link" href="./index.html">Студія</a></li>
+                    <li><a class="menu-mobile__link link menu__link--current" href="./portfolio.html">Портфоліо</a></li>
                     <li><a class="menu-mobile__link link" href="#">Контакти</a></li>
                     
                 </ul>
@@ -124,7 +129,7 @@
                 </ul>
 
                 <ul class="portfolio-card list">
-                <li class="portfolio-card__item">
+                <li class="portfolio-card portfolio-card__item">
                     
                        
                     <a href="" class="portfolio-card__link link">
@@ -144,7 +149,7 @@
                     </li>
                     
 
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                             <img src="./images/poster.jpg" alt="Постер" width="370" height="294"/>
@@ -159,7 +164,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                             <img src="./images/restouran.jpg" alt="Логотип ресторана" width="370" height="294"/>
@@ -174,7 +179,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                     <div class="portfolio-card__overlay">
                         <img src="./images/earphone.jpg" alt="Наушники" width="370" height="294"/>
@@ -189,7 +194,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                             <img src="./images/boxes.jpg" alt="Коробки" width="370" height="294"/>
@@ -204,7 +209,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                     <img src="./images/screen.jpg" alt="Монитор" width="370" height="294"/>
@@ -219,7 +224,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                     <img src="./images/book.jpg" alt="Книжка" width="370" height="294"/>
@@ -234,7 +239,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                     <img src="./images/label.jpg" alt="Лэйбл" width="370" height="294"/>
@@ -250,7 +255,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="portfolio-card">
+                <li class="portfolio-card portfolio-card__item">
                     <a href="" class="portfolio-card__link link">
                         <div class="portfolio-card__overlay">
                     <img src="./images/laptop-grey.jpg" alt="Серый ноутбук" width="370" height="294"/>
@@ -273,77 +278,79 @@
     <!--Підвал-->
     <footer class="footer">
         <div class="container container--footer">
-            <div>
-    
-                <a href="./index.html" class="logo"><span class="logo--accent">Web</span><span
-                        class="logo--inverse">Studio</span></a>
-    
-                <address class="footer-contact">
-                    <ul class="footer__list list">
-                        <li><a class="footer__alink" href="https://goo.gl/maps/fsrZMhFEjWkYueq66" target="_blank"
-                                rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li><a class="footer__link link footer-accent" href="mailto:info@example.com">info@example.com</a>
-                        </li>
-                        <li><a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                    </ul>
-    
-                </address>
-            </div>
-    
-    
-    
-            <div class="footer-follow">
-                <p class="footer-follow__text">приєднуйтесь</p>
-                <ul class="footer-follow__list list">
-                    <li class="footer-follow__link">
-                        <a href="" class="footer-follow__icon">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icon/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-follow__link">
-                        <a href="" class="footer-follow__icon">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icon/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-follow__link">
-                        <a href="" class="footer-follow__icon">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icon/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-follow__link">
-                        <a href="" class="footer-follow__icon">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icon/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="footer__tex--column">
+        <div class="footer__text">
+                   
+        <a href="./index.html" class="logo"><span class="logo--accent">Web</span><span class="logo--inverse">Studio</span></a>
+       
+        <address class="footer-contact">
+            <ul class="footer__list list">
+                <li><a class="footer__alink" href="https://goo.gl/maps/fsrZMhFEjWkYueq66" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li><a class="footer__link link footer-accent" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+                  
+        </address>
+        </div>
+        
+        
+
+        <div class="footer-follow">
+            <p class="footer-follow__text">приєднуйтесь</p>
+            <ul class="footer-follow__list list">
+                <li class="footer-follow__link">
+                    <a href="" class="footer-follow__icon">
+                        <svg width="20px" height="20px">
+                            <use href="./images/icon/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-follow__link">
+                    <a href="" class="footer-follow__icon">
+                        <svg width="20px" height="20px">
+                            <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-follow__link">
+                    <a href="" class="footer-follow__icon">
+                        <svg width="20px" height="20px">
+                            <use href="./images/icon/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-follow__link">
+                    <a href="" class="footer-follow__icon">
+                        <svg width="20px" height="20px">
+                            <use href="./images/icon/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
             <div class="footer-subscription">
-            
-                <p class="footer-subscription__title">Підпишіться на розсилку</p>
-            
+                
+                    <p class="footer-subscription__title">Підпишіться на розсилку</p>
+                
                 <form class="footer-subscription__form" autocomplete="off">
-            
-                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-subscription__input">
-            
+                    
+                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-subscription__input" required >
+
                     <button type="submit" class="footer-subscription__button">
                         <span>Підписатися</span>
-                        <svg class="footer-subscription__icon" width="24" height="24">
-                            <use href="./images/icon/sprite.svg#icon-send"></use>
-                        </svg>
+                    <svg class="footer-subscription__icon" width="24" height="24">
+                        <use href="./images/icon/sprite.svg#icon-send"></use>
+                    </svg>
                     </button>
                 </form>
             </div>
-        </div>
+            </div>
     </footer>
+     <!--скрипт джава на модальне вікно-->
+     <script src="./js/mobile-menu.js"></script>
+     <script src="./js/modal.js"></script>
     </body>
     
     </html>
