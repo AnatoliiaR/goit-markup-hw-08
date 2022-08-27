@@ -2,11 +2,12 @@
 
     background-color: $color-blacklight-2f30;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-    height: 600px;
-    max-width: 1600px;
+    height: 400px;
+    // max-width: 1600px;
+    max-width: 480px;
     margin-right: auto;
     margin-left: auto;
 
@@ -39,9 +40,9 @@
 }
 
 
-@media screen and (min-device-pixel-rotatio: 2) and (max-width: 767px), 
-screem and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-rotatio: 2) and (min-width: 340px), 
+screem and (min-resolution: 192dpi) and (min-width: 340px),
+screen and (min-resolution: 2dppx) and (min-width: 340px) {
 
     .hero {
         // max-width: 767px;
@@ -55,14 +56,44 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         @include font($fs: 26px, $fw: 900, $lh: 42px);
         // width: 360px;
         height: 84px;
+        margin-bottom: 30px;
+          
+           
+           }
 
-
-    }
+        }
 
     
 
 
-    }
+
+
+//     @media screen and (min-device-pixel-rotatio: 2) and (min-width: 768px), 
+// screem and (min-resolution: 192dpi) and (min-width: 768px),
+// screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
+//     .hero {
+//         // max-width: 767px;
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)),
+//         url("../images/hero-mobile@2x.jpg");
+//     }
+
+
+//     .hero__title {
+//         @include font($fs: 26px, $fw: 900, $lh: 42px);
+//         // width: 360px;
+//         height: 84px;
+//         margin-bottom: 30px;
+          
+           
+        
+
+
+//     }
+
+
+//     }
 
 
 @media screen and  (min-width: 768px) {
@@ -78,6 +109,17 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         rgba(47, 48, 58, 0.4)),
         url("../images/hero-tablet.jpg");
     }
+
+
+    .hero__title {
+      
+        // height: 84px;
+        width: 360px;
+        margin-bottom: 30px;
+        
+          
+           
+           }
 
 
 
@@ -104,6 +146,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
 
         max-width: 1600px;
+        height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
 
@@ -115,20 +158,21 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 
     .hero__title {
-        margin-bottom: 30px;
-        // width: 696px;
+        margin-bottom: 45px;
+        width: 696px;
         margin-right: auto;
         margin-left: auto;
     
     
         /* background-color: wheat; */
         color: $primary-white-color;
-        // font-weight: 900;
-        // font-size: 44px;
-        // line-height: 1.36;
-        @include font($fs: 44px, $fw: 900, $lh: 60px);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        // @include font($fs: 44px, $fw: 900, $lh: 60px);
         text-transform: uppercase;
         letter-spacing: 0.06em;
+        
     }
 
 
